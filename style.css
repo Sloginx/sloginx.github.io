@@ -1,0 +1,252 @@
+/** Globales **/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: #F3F5FC;
+}
+h1, h2, h3{
+    margin: 0 0 2rem 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img{
+    max-width: 100%;
+}
+.contenedor {
+    display: flex;
+    background-color: #F3F5FC;
+    justify-content: space-around;
+}
+
+/** Logo **/
+
+.logo {
+    margin: 3rem 0 0 1.5rem;
+}
+
+/** area de texto **/
+
+.texto{
+    display: inline-block;
+    margin-top: 13rem;
+}
+
+#textoU{
+    color: #0A3871;
+    font-size: 3rem;
+    background-color: #F3F5FC;
+    border-width: 0;
+    border-style: none;
+    float: right;
+    resize: none;
+}
+#textoU::placeholder{
+    color: #0A3871;
+}
+textarea:focus{
+    outline: none;
+}
+.aviso{
+    display: block;
+    margin-bottom: 1.6rem;
+}
+.aviso img{
+    margin: 0.3rem 0.5rem 0 0;
+}
+.aviso p{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #495057;
+    margin: 0;
+}
+.botones {
+    display: block;
+}
+.botonesP{
+    width: 24rem;
+    height: 5rem;
+    border-radius: 2.4rem;
+}
+.botonesP:hover{
+    cursor: pointer;
+}
+#botonE {
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: none;
+}
+#botonD {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+/** resultado **/
+.resultado{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 57rem;
+    text-align: center;
+    border-radius: 3rem;
+    word-wrap: break-word;
+    margin-top: 2.5rem;
+    box-shadow: 1px 5px 8px 5px rgba(0,0,0,0.1);
+}
+.resultado-pre{
+    height: auto;
+}
+.muneco {
+    width: 25rem;
+    height: 23rem;
+    margin: auto;
+}
+#textoE{
+    display: none;
+    padding: 3.2rem;
+    margin: 0;
+    max-width: 100%;
+    height: 87%;
+    overflow-y: auto;
+}
+.resultado p{
+    font-size: 1.4rem;
+    color: #495057;
+    padding: .5rem;
+    line-height: 1.5;
+}
+.resultado h3{
+    font-size: 2.2rem;
+    color: #343A40;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.con-boton{
+    display: none;
+    height: 10%;
+}
+#boton-copiar {
+    background-color: #FFFFFF;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    margin-inline: auto;
+}
+
+/** Diseño responsivo **/
+
+@media only screen and (max-width: 1023px) {
+
+html{
+    max-width: 100%;
+}
+.contenedor{
+    flex-direction: column;
+}
+.logo {
+    margin: 7rem 0 0 4rem;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 100%;
+    margin: 11.6rem 4rem 0 4rem;
+}
+#textoU {
+    display: block;
+    float: left;
+    height: 57rem;
+}
+.aviso{
+    display: flex;
+}
+.aviso img{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.botonesP{
+    width: 33.2rem;
+    height: 6.7rem;
+}
+#botonE{
+    float: left;
+
+}
+#botonD{
+    float: right;
+}
+
+.resultado{
+    width: 68.8rem;
+    height: auto;
+    margin: 6rem auto 4rem auto;
+}
+.muneco{
+    display: none;
+}
+.texto-resultado{
+    margin: 3.2rem;
+}
+.resultado p{
+    font-size: 1.6rem;
+}
+.resultado h3{
+    font-size: 2.4rem;
+}
+
+.con-boton{
+    margin-bottom: 2rem;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 744px){
+.logo{
+    margin: 2.4rem 0 0 1.6rem;
+}
+.texto{
+    margin-inline: 1.6rem;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+}
+.botonesP{
+    display: block;
+}
+#botonE{
+    float: none;
+}
+#botonD{
+    float: none;
+    margin-top: 2.4rem;
+}
+
+.resultado {
+    width: 85vw;
+}
+
+.con-boton{
+    width: 90%;
+    margin: 3.2rem;
+}
+#boton-copiar{
+    width: 100%;
+}
+
+}
